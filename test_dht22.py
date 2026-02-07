@@ -30,7 +30,7 @@ try:
             humidity = dht.humidity
             
             # Dispaly output
-            print(f"Temperature: {temperature:.1f}C")
+            print(f"Temperature: {temperature:.1f}°C")
             print(f"Humidity: {humidity:.1f}%")
             print()
             
