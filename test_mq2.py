@@ -12,11 +12,11 @@ ads = ADS.ADS1115(i2c)
 mq2 = AnalogIn(ads, 0)
 
 
-# 20-Second initialization
+# 5-Second initialization
 print("Testing MQ2")
-print(f"Initializing sensor for 20 seconds...")
+print(f"Initializing sensor for 5 seconds...")
 
-for i in range(20, 0, -1):
+for i in range(5, 0, -1):
     time.sleep(1)
 
 print("\nReadings:")
@@ -44,4 +44,3 @@ try:
         
 except KeyboardInterrupt:
     print("\nStopped")
-
